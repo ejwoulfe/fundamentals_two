@@ -1,0 +1,6 @@
+/* Rule set is made up of properties, these properties are given values. */
+
+#heading_one {
+  font-weight: 800;
+  color: rebeccapurple;
+}
