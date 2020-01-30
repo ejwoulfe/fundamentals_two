@@ -1,0 +1,35 @@
+#main_container {
+  display: flex;
+  background-color: sienna;
+  justify-content: space-evenly;
+  align-items: center;
+  /* align-items: flex-start;  will move to the top*/
+  /* align-items: flex-end;  will move to the bottom*/
+}
+#container_one {
+  background-color: royalblue;
+  flex-basis: 25%;
+  order: 2;
+}
+#container_two {
+  background-color: rgb(219, 112, 112);
+  flex-basis: 25%;
+  order: 3;
+}
+#container_three {
+  background-color: rgb(95, 235, 106);
+  flex-basis: 25%;
+  order: 1;
+}
+@media (max-width: 768px) {
+  #main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #container_one,
+  #container_two,
+  #container_three {
+    width: 100%;
+  }
+}
